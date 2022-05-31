@@ -13,7 +13,7 @@ function App() {
   console.log(category);
 
   useEffect(() => {
-    fetch(`${selectedCity}/${category}`)
+    fetch(`/${selectedCity}/${category}`)
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));
